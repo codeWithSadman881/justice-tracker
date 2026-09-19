@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>তথ্য জমা দিন - ন্যায়বিচার পোর্টাল</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-red: #b91c1c;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #cbd5e1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* ন্যাভিগেশন বার স্টাইল */
+        .navbar {
+            background-color: #0f172a;
+            padding: 0.8rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 3px solid var(--accent-red);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--accent-red);
+            color: white;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--accent-red);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .form-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--accent-red);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            background-color: var(--accent-red);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #991b1b;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #64748b;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- কমন ন্যাভিগেশন বার -->
+    <nav class="navbar">
+        <a href="index.html">🏠 হোম</a>
+        <a href="rape-cases.html">🛡️ ধর্ষণ ও যৌন সহিংসতা</a>
+        <a href="missing-cases.html">👤 গুম ও নিখোঁজ</a>
+        <a href="murder-cases.html">⚖️ হত্যাকাণ্ড ও খুন</a>
+        <a href="report.html" class="active">📝 তথ্য জমা দিন</a>
+    </nav>
+
+    <header>
+        <h1>📝 নতুন তথ্য বা কেস জমা দিন</h1>
+        <p>আপনার কাছে গুম, খুন, হত্যাকাণ্ড বা যৌন সহিংসতার কোনো নির্ভরযোগ্য তথ্য থাকলে তা এখানে নিরাপদভাবে জানান</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← হোমপেজে ফিরে যান</a>
+
+        <div class="form-section">
+            <p style="margin-bottom: 1.5rem; color: #64748b; font-size: 0.95rem;">সংবেদনশীল তথ্য ও গোপনীয়তা কঠোরভাবে রক্ষা করা হবে। সঠিক তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন।</p>
+            
+            <form onsubmit="event.preventDefault(); alert('আপনার তথ্য সফলভাবে জমা হয়েছে। ধন্যবাদ!');">
+                <div class="form-group">
+                    <label for="category">অপরাধের ধরণ নির্বাচন করুন:</label>
+                    <select id="category" required>
+                        <option value="">-- ধরণ বেছে নিন --</option>
+                        <option value="missing">গুম বা নিখোঁজ ব্যক্তি</option>
+                        <option value="murder">হত্যাকাণ্ড বা খুন</option>
+                        <option value="rape">ধর্ষণ ও যৌন সহিংসতা</option>
+                        <option value="other">অন্যান্য বিচারহীনতার ঘটনা</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">ঘটনার স্থান:</label>
+                    <input type="text" id="location" placeholder="যেমন: এলাকা, থানা, জেলা" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">ঘটনার আনুমানিক তারিখ:</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">ঘটনার বিস্তারিত বিবরণ:</label>
+                    <textarea id="details" rows="5" placeholder="ঘটনা সম্পর্কে বিস্তারিত তথ্য এখানে লিখুন..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">আপনার যোগাযোগের তথ্য (ঐচ্ছিক / গোপন রাখা হবে):</label>
+                    <input type="text" id="contact" placeholder="ফোন নম্বর বা ইমেল ঠিকানা (যদি প্রকাশ করতে চান)">
+                </div>
+
+                <button type="submit" class="submit-btn">তথ্য সাবমিট করুন</button>
+            </form>
+        </div>
+
+        <!-- জরুরি হটলাইন ব্যানার -->
+        <div style="background: linear-gradient(135deg, #b91c1c, #7f1d1d); color: white; text-align: center; padding: 1.5rem; border-radius: 8px; margin: 3rem 0 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">🚨 জরুরি প্রয়োজনে তাৎক্ষণিক সহায়তা</h3>
+            <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem;">যেকোনো বিপদ বা অপরাধমূলক পরিস্থিতিতে অবিলম্বে কল করুন জাতীয় জরুরি সেবায়:</p>
+            <div style="font-size: 2rem; font-weight: bold; background: white; color: #b91c1c; display: inline-block; padding: 0.3rem 1.5rem; border-radius: 50px; letter-spacing: 2px;">
+                📞 ৯৯৯
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; ২০২৬ ন্যায়বিচার ও অপরাধ পর্যবেক্ষণ পোর্টাল।</p>
+    </div>
+
+</body>
+</html>

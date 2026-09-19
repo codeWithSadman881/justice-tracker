@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গুম ও নিখোঁজ ব্যক্তি পর্যবেক্ষণ - ন্যায়বিচার পোর্টাল</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-red: #b91c1c;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #cbd5e1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* ন্যাভিগেশন বার স্টাইল */
+        .navbar {
+            background-color: #0f172a;
+            padding: 0.8rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 3px solid var(--accent-red);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--accent-red);
+            color: white;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--accent-red);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid var(--accent-red);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+            font-size: 1.2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #64748b;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- কমন ন্যাভিগেশন বার -->
+    <nav class="navbar">
+        <a href="index.html">🏠 হোম</a>
+        <a href="rape-cases.html">🛡️ ধর্ষণ ও যৌন সহিংসতা</a>
+        <a href="missing-cases.html" class="active">👤 গুম ও নিখোঁজ</a>
+        <a href="murder-cases.html">⚖️ হত্যাকাণ্ড ও খুন</a>
+        <a href="report.html">📝 তথ্য জমা দিন</a>
+    </nav>
+
+    <header>
+        <h1>👤 গুম ও নিখোঁজ ব্যক্তি পর্যবেক্ষণ</h1>
+        <p>এই পেজে নিখোঁজ ও গুম হওয়া ব্যক্তিদের তথ্য এবং বর্তমান অনুসন্ধান স্ট্যাটাস সংরক্ষিত রয়েছে</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← হোমপেজে ফিরে যান</a>
+
+        <h2 class="section-title">নিখোঁজ ও গুমের তালিকা</h2>
+        <div class="card-grid">
+            <!-- সিফাতের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Sifat-image.jpg" alt="নিখোঁজ শিশু সিফাত" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০১</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: সিফাত (বয়স: ১৩ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১৭ সেপ্টেম্বর, ২০২৬ (বৃহস্পতিবার) সকাল আনুমানিক ০৮:৩০ ঘটিকার সময় নরসিংদী জেলার মনোহরদী থানাধীন শুক্কুন্দী ইউনিয়নের শুক্কুন্দী এলাকা থেকে সিফাত নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> শুক্কুন্দী এলাকা, মনোহরদী, নরসিংদী</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে রয়েছে। শিশুটির সন্ধান পেতে সকলের সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- মো. ওমর হোসেনের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Omor-image.jpg" alt="নিখোঁজ শিশু মো. ওমর হোসেন" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০২</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: মো. ওমর হোসেন (বয়স: ১৩ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ০৮ সেপ্টেম্বর, ২০২৬ সকাল আনুমানিক ০৯:০৫ ঘটিকার সময় চাঁদপুর জেলার ফরিদগঞ্জ থানাধীন দক্ষিণ পাইকপাড়ার খুরুম খালি এলাকা থেকে ওমর হোসেন নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> দক্ষিণ পাইকপাড়া (খুরুম খালি), ফরিদগঞ্জ, চাঁদপুর</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- হাবিবুল্লাহ নাঈমের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Naim-image.jpg" alt="নিখোঁজ শিশু হাবিবুল্লাহ নাঈম" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৩</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: হাবিবুল্লাহ নাঈম (বয়স: ১২ বছর)</h3>
+                <p><strong>বিশেষ বিবরণ:</strong> শিশুটি মানসিকভাবে অসুস্থ</p>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১৭ সেপ্টেম্বর, ২০২৬ (বৃহস্পতিবার) বিকাল আনুমানিক ০৫:১৩ ঘটিকার সময় ঢাকা জেলার খিলক্ষেত থানাধীন ১৭ নম্বর ওয়ার্ডের কুর্মিটোলা স্কুল রোড এলাকার বাসা থেকে হাবিবুল্লাহ নাঈম নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> কুর্মিটোলা স্কুল রোড, খিলক্ষেত, ঢাকা</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- ফারিয়া তাবাসসুম মিমের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Mim-image.jpg" alt="নিখোঁজ শিশু ফারিয়া তাবাসসুম মিম" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৪</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: ফারিয়া তাবাসসুম মিম (বয়স: ১০ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১৭ সেপ্টেম্বর, ২০২৬ (বৃহস্পতিবার) রাত আনুমানিক ০৮:০০ ঘটিকায় বানিয়াচং থানাধীন ১ নং উত্তর পূর্ব ইউনিয়ন এর ৬ নং ওয়ার্ড চতুরঙ্গ রায়ের পাড়া এলাকা থেকে ফারিয়া তাবাসসুম নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> চতুরঙ্গ রায়ের পাড়া, বানিয়াচং</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- সাজিদুর রহমান সালমানের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Salman-image.jpeg" alt="নিখোঁজ শিশু সাজিদুর রহমান সালমান" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৫</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: সাজিদুর রহমান সালমান (বয়স: ১১ বছর)</h3>
+                <p><strong>বিশেষ বিবরণ:</strong> সে জাতীয় তরুণ সংঘ মাধ্যমিক বিদ্যালয়ের ৬ষ্ঠ শ্রেণীর ছাত্র</p>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১৫ আগস্ট, ২০২৬ বিকাল ০৩:৪০ ঘটিকার সময় ঢাকা জেলার কেরানীগঞ্জ মডেল থানাধীন কলাতিয়া ইউনিয়নের খোড়াকান্দি ভেড়িঘাট এলাকার নদীর পাড় থেকে সে নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> খোড়াকান্দি ভেড়িঘাট নদীর পাড়, কলাতিয়া, কেরানীগঞ্জ, ঢাকা</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- মোহাম্মদ আলীর নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Mohammad-image.jpeg" alt="নিখোঁজ শিশু মোহাম্মদ আলী" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৬</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: মোহাম্মদ আলী (বয়স: ১৩ বছর)</h3>
+                <p><strong>বিশেষ বিবরণ:</strong> নিখোঁজের সময় তার পরনে ছিল ফুল হাতা টি-শার্ট</p>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১১ সেপ্টেম্বর, ২০২৬ (শুক্রবার) সকাল ১১:০০ (আনুমানিক) সময় ঢাকা জেলার রূপনগর থানাধীন ৬ নম্বর ওয়ার্ডের সেকশন-০৬, টি-ব্লক (ঝিলপাড় বস্তি) এলাকার নিজ বাসা সংলগ্ন স্থান থেকে শিশু মোহাম্মদ আলী নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> সেকশন-০৬, টি-ব্লক (ঝিলপাড় বস্তি), রূপনগর, ঢাকা</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- মো. তাসিন সর্দারের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Tasin-image.jpeg" alt="নিখোঁজ শিশু মো. তাসিন সর্দার" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৭</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: মো. তাসিন সর্দার (বয়স: ১৩ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ০২ সেপ্টেম্বর, ২০২৬ (বুধবার) ভোর ০৩:৩০ (আনুমানিক) সময় মাদারীপুর জেলার ডাসার থানাধীন ডাসার ইউনিয়নের ৬ নম্বর ওয়ার্ডের ডাসার এলাকা থেকে শিশু মো. তাসিন সর্দার নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> ডাসার এলাকা, ডাসার ইউনিয়ন, ডাসার, মাদারীপুর</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- মো. সোহেল রানার নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Sohel-image.jpeg" alt="নিখোঁজ শিশু মো. সোহেল রানা" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৮</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: মো. সোহেল রানা (বয়স: ১৬ বছর)</h3>
+                <p><strong>বিশেষ বিবরণ:</strong> বিশেষ চাহিদা সম্পন্ন শিশু</p>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১২ সেপ্টেম্বর, ২০২৬ (শনিবার) বিকাল ০৪:১৫ (আনুমানিক) সময় নাটোর জেলার গুরুদাসপুর থানাধীন ৯ নম্বর ওয়ার্ডের আনন্দনগর এলাকা থেকে শিশু মো. সোহেল রানা নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> আনন্দনগর এলাকা, গুরুদাসপুর, নাটোর</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- নাহিদ হাসানের নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Nahid-image.jpeg" alt="নিখোঁজ শিশু নাহিদ হাসান" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #০৯</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: নাহিদ হাসান (বয়স: ১২ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১১ সেপ্টেম্বর, ২০২৬ (শুক্রবার) সন্ধ্যা আনুমানিক ০৬:০০ ঘটিকায় সময় ঢাকা জেলার আশুলিয়া থানাধীন ধামসোনা ইউনিয়নের ভাদাইল এলাকা থেকে শিশু নাহিদ হাসান নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> ভাদাইল এলাকা, ধামসোনা ইউনিয়ন, আশুলিয়া, ঢাকা</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+            <!-- মিরাজ মোল্লার নিখোঁজ সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Miraz-image.jpeg" alt="নিখোঁজ শিশু মিরাজ মোল্লা" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">👤 শিশুর ছবি</span>
+                </div>
+                <span class="badge" style="background: #fef3c7; color: #92400e;">নিখোঁজ #১০</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিখোঁজ শিশু: মিরাজ মোল্লা (বয়স: ১২ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১২ সেপ্টেম্বর, ২০২৬ (শনিবার) বিকাল আনুমানিক ০৫:৩০ ঘটিকার সময় ঢাকা জেলার কলাবাগান থানাধীন ১৬ নম্বর ওয়ার্ডের ফ্রি স্কুল স্ট্রিট রোড, কাঁঠালবাগান এলাকা থেকে শিশু মিরাজ মোল্লা নিখোঁজ হয়। সম্ভাব্য সকল জায়গায় খোঁজাখুঁজি করেও এখনও তার কোনো সন্ধান পাওয়া যায়নি।</p>
+                <p><strong>স্থান:</strong> ফ্রি স্কুল স্ট্রিট রোড, কাঁঠালবাগান, কলাবাগান, ঢাকা</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম উৎকণ্ঠা ও উদ্বেগের মধ্যে দিন কাটাচ্ছে। শিশুটির সন্ধান পেতে সকলের আন্তরিক সহযোগিতা কামনা করা হচ্ছে।</p>
+            </div>
+        </div>
+        <!-- জরুরি হটলাইন ব্যানার -->
+        <div style="background: linear-gradient(135deg, #b91c1c, #7f1d1d); color: white; text-align: center; padding: 1.5rem; border-radius: 8px; margin: 3rem 0 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">🚨 জরুরি প্রয়োজনে তাৎক্ষণিক সহায়তা</h3>
+            <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem;">যেকোনো বিপদ বা অপরাধমূলক পরিস্থিতিতে অবিলম্বে কল করুন জাতীয় জরুরি সেবায়:</p>
+            <div style="font-size: 2rem; font-weight: bold; background: white; color: #b91c1c; display: inline-block; padding: 0.3rem 1.5rem; border-radius: 50px; letter-spacing: 2px;">
+                📞 ৯৯৯
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; ২০২৬ ন্যায়বিচার ও অপরাধ পর্যবেক্ষণ পোর্টাল।</p>
+    </div>
+
+</body>
+</html>

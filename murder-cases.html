@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হত্যাকাণ্ড ও খুন পর্যবেক্ষণ - ন্যায়বিচার পোর্টাল</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-red: #b91c1c;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #cbd5e1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* ন্যাভিগেশন বার স্টাইল */
+        .navbar {
+            background-color: #0f172a;
+            padding: 0.8rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 3px solid var(--accent-red);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--accent-red);
+            color: white;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--accent-red);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid var(--accent-red);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+            font-size: 1.2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #64748b;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- কমন ন্যাভিগেশন বার -->
+    <nav class="navbar">
+        <a href="index.html">🏠 হোম</a>
+        <a href="rape-cases.html">🛡️ ধর্ষণ ও যৌন সহিংসতা</a>
+        <a href="missing-cases.html">👤 গুম ও নিখোঁজ</a>
+        <a href="murder-cases.html" class="active">⚖️ হত্যাকাণ্ড ও খুন</a>
+        <a href="report.html">📝 তথ্য জমা দিন</a>
+    </nav>
+
+    <header>
+        <h1>⚖️ হত্যাকাণ্ড ও খুন পর্যবেক্ষণ</h1>
+        <p>এই পেজে হত্যাকাণ্ড, খুন এবং বিচারহীনতার শিকার মামলাসমূহের তথ্য ও বর্তমান আইনি স্ট্যাটাস সংরক্ষিত রয়েছে</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← হোমপেজে ফিরে যান</a>
+
+        <h2 class="section-title">হত্যাকান্ড ও খুনের তালিকা</h2>
+        <div class="card-grid">
+            <!-- অপ্রতীমের ঘটনা সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #e2e8f0; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <!-- এখানে symbolic-image.jpg দেওয়া হয়েছে যাতে ফোল্ডার থেকে ছবি সঠিকভাবে লোড হয় -->
+                    <img src="Opritom-image.jpg" alt="প্রতীকী ছবি" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">⚖️ প্রতীকী ছবি / লোগো</span>
+                </div>
+                <span class="badge">হত্যাকাণ্ড #০১</span>
+                <h3>নিহত: অপ্রতীম (বয়স: ১৩, সপ্তম শ্রেণি)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> গত ১৮ সেপ্টেম্বর বিকাল ৩টায় বন্ধুদের সাথে আইফোন নিয়ে ছবি তুলতে গিয়ে নিখোঁজ হন। পরবর্তীতে আজ (১৯ সেপ্টেম্বর) দুপুর ১:৩০ মিনিটের দিকে কুমিল্লার লালমাই পাহাড়ের জঙ্গল থেকে তাঁর মরদেহ উদ্ধার করা হয়।</p>
+                <p><strong>স্থান:</strong> লালমাই পাহাড়, কুমিল্লা</p>
+                <p><strong>আইনি পদক্ষেপ:</strong> এ বিষয়ে থানায় জানানো হলেও মোবাইল ফোন ট্র্যাক করা সম্ভব হয়নি।</p>
+                <p><strong>বর্তমান অবস্থা:</strong> মরদেহ উদ্ধার ও পুলিশি তদন্তাধীন</p>
+            </div>
+
+            <!-- আজমলের ঘটনা সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Ajmol-image.jpeg" alt="আজমলের ছবি" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">⚖️ প্রতীকী ছবি</span>
+                </div>
+                <span class="badge" style="background: #fee2e2; color: #991b1b;">হত্যাকাণ্ড #০২</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিহত: আজমল (বিশ্ববিদ্যালয় শিক্ষার্থী)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> খুলনায় মেস বা মিলের নিয়ম না মেনে ভাত খাওয়ার জেরে অন্য সদস্যদের সাথে বাকবিতণ্ডা হয়। পরবর্তীতে তাকে পাঁচতলা ভবনের ছাদে নিয়ে মারধর ও চুল কেটে দেওয়া হয় এবং একপর্যায়ে ছাদ থেকে ফেলে দেওয়া হয়।</p>
+                <p><strong>স্থান:</strong> খুলনা</p>
+                <p><strong>হাসপাতাল ও আইনি পদক্ষেপ:</strong> গুরুতর আহত অবস্থায় তাকে উদ্ধার করে খুলনা মেডিকেল কলেজ হাসপাতালে নেওয়া হলে চিকিৎসাধীন অবস্থায় তাঁর মৃত্যু হয়। এ ঘটনায় আইনগত ব্যবস্থা গ্রহণের প্রক্রিয়া চলছে।</p>
+                <p><strong>বর্তমান অবস্থা:</strong> তুচ্ছ ঘটনায় সহপাঠী বা মেসের সদস্যদের নৃশংস নির্যাতনের শিকার হয়ে প্রাণহানির ঘটনায় দেশজুড়ে তীব্র ক্ষোভ ও বিচার দাবি।</p>
+            </div>
+            
+            <div class="card">
+                <span class="badge">হত্যাকাণ্ড কেস #০৩</span>
+                <h3>মামলার বিবরণ: তদন্তাধীন</h3>
+                <p><strong>ঘটনার তারিখ:</strong> ১০ আগস্ট ২০২৪</p>
+                <p><strong>স্থান:</strong> রাজশাহী</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পিবিআই দ্বারা অতিরিক্ত তদন্ত চলছে</p>
+            </div>
+        </div>
+
+        <!-- জরুরি হটলাইন ব্যানার -->
+        <div style="background: linear-gradient(135deg, #b91c1c, #7f1d1d); color: white; text-align: center; padding: 1.5rem; border-radius: 8px; margin: 3rem 0 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">🚨 জরুরি প্রয়োজনে তাৎক্ষণিক সহায়তা</h3>
+            <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem;">যেকোনো বিপদ বা অপরাধমূলক পরিস্থিতিতে অবিলম্বে কল করুন জাতীয় জরুরি সেবায়:</p>
+            <div style="font-size: 2rem; font-weight: bold; background: white; color: #b91c1c; display: inline-block; padding: 0.3rem 1.5rem; border-radius: 50px; letter-spacing: 2px;">
+                📞 ৯৯৯
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; ২০২৬ ন্যায়বিচার ও অপরাধ পর্যবেক্ষণ পোর্টাল।</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ধর্ষণ ও যৌন সহিংসতা পর্যবেক্ষণ - ন্যায়বিচার পোর্টাল</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-red: #b91c1c;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #cbd5e1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* ন্যাভিগেশন বার স্টাইল */
+        .navbar {
+            background-color: #0f172a;
+            padding: 0.8rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border-bottom: 3px solid var(--accent-red);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--accent-red);
+            color: white;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--accent-red);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+            border-top: 4px solid var(--accent-red);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+            font-size: 1.2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #64748b;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- কমন ন্যাভিগেশন বার -->
+    <nav class="navbar">
+        <a href="index.html">🏠 হোম</a>
+        <a href="rape-cases.html" class="active">🛡️ ধর্ষণ ও যৌন সহিংসতা</a>
+        <a href="missing-cases.html">👤 গুম ও নিখোঁজ</a>
+        <a href="murder-cases.html">⚖️ হত্যাকাণ্ড ও খুন</a>
+        <a href="report.html">📝 তথ্য জমা দিন</a>
+    </nav>
+
+    <header>
+        <h1>🛡️ ধর্ষণ ও যৌন সহিংসতা পর্যবেক্ষণ</h1>
+        <p>এই পেজে শুধুমাত্র ধর্ষণ এবং যৌন নিপীড়নের মামলা ও বিচারহীনতার তথ্য সংরক্ষিত রয়েছে</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← হোমপেজে ফিরে যান</a>
+
+        <h2 class="section-title">ধর্ষণ ও যৌন সহিংসতার তালিকা</h2>
+        <div class="card-grid">
+            <!-- তোমার ঘটনা সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <!-- এখানে চাইলে ছবি বা প্রতীকী আইকন রাখতে পারেন -->
+                    <img src="Toma-image.jpeg" alt="প্রতীকী ছবি" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">⚖️ প্রতীকী ছবি</span>
+                </div>
+                <span class="badge" style="background: #fee2e2; color: #991b1b;">ধর্ষণ ও হত্যাকাণ্ড #০১</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">ভুক্তভোগী: নিহত তমা (এইচএসসি ২য় বর্ষের শিক্ষার্থী)</h3>
+                <p><strong>পিতা:</strong> তোফাজ্জল হোসেন, গ্রাম: ফকীরবাদ (বক্ষীপাড়া), ভেড়ামারা, কুষ্টিয়া।</p>
+                <p><strong>ঘটনার বিবরণ:</strong> গোলাপনগর বাজার থেকে অপহরণ করে একটি ফার্মহাউসে নিয়ে অভিযুক্তরা দলবদ্ধ ধর্ষণ ও অমানবিক শারীরিক নির্যাতন চালায়। পরবর্তীতে আশঙ্কাজনক অবস্থায় ফেলে যাওয়ার পর চিকিৎসাধীন অবস্থায় তিনি মারা যান।</p>
+                <p><strong>অভিযুক্ত পক্ষ:</strong> স্থানীয় প্রভাবশালী ও রাজনৈতিক ছত্রচ্ছায়ায় থাকা সন্ত্রাসীরা (রাসেল ও তার সহযোগীরা)।</p>
+                <p><strong>দাবি ও প্রমাণ:</strong> সিসিটিভি ক্যামেরা ও যাতায়াতের পথ বিশ্লেষণ করে অপরাধীদের দ্রুত বিচারের আওতায় আনার দাবি।</p>
+                <p><strong>বর্তমান অবস্থা:</strong> পরিবার চরম নিরাপত্তাহীনতায় ও আতঙ্কে দিন কাটাচ্ছে; সুষ্ঠু তদন্ত ও বিচার দাবি এলাকাবাসীর।</p>
+            </div>
+            <!-- মরিয়ম বুশরার ঘটনা সংক্রান্ত নতুন কার্ড -->
+            <div class="card">
+                <div style="width: 100%; height: 160px; background-color: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; overflow: hidden;">
+                    <img src="Bushra-image.jpeg" alt="নিহত শিশু মরিয়ম বুশরা" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; color: #64748b; font-size: 0.9rem; font-weight: bold;">⚖️ প্রতীকী ছবি</span>
+                </div>
+                <span class="badge" style="background: #fee2e2; color: #991b1b;">ধর্ষণ ও হত্যাকাণ্ড #০২</span>
+                <h3 style="color: #b91c1c; margin-top: 0;">নিহত: মরিয়ম বুশরা (বয়স: ৭ বছর)</h3>
+                <p><strong>ঘটনার বিবরণ:</strong> জামালপুরের মাদারগঞ্জে ৭ বছরের শিশু মরিয়ম বুশরাকে ধর্ষণের পর গলায় ওড়না পেঁচিয়ে হত্যা করা হয়। ঘটনা ধামাচাপা দিতে ধর্ষক তার বসতঘরে গর্ত খুঁড়ে মরদেহ মাটিচাপা দিয়ে রাখে।</p>
+                <p><strong>স্থান:</strong> মাদারগঞ্জ, জামালপুর</p>
+                <p><strong>আইনি পদক্ষেপ:</strong> এ ঘটনায় অভিযুক্ত জামিনুর নামের এক ব্যক্তিকে পুলিশ গ্রেপ্তার করেছে এবং আইনগত ব্যবস্থা গ্রহণ করা হয়েছে।</p>
+                <p><strong>বর্তমান অবস্থা:</strong> এই নৃশংস ও পৈশাচিক হত্যাকাণ্ডে এলাকায় তীব্র শোক ও ক্ষোভের সৃষ্টি হয়েছে; দোষী ব্যক্তির দৃষ্টান্তমূলক শাস্তি দাবি করছেন স্থানীয়রা।</p>
+            </div>
+        </div>
+
+        <!-- জরুরি হটলাইন ব্যানার -->
+        <div style="background: linear-gradient(135deg, #b91c1c, #7f1d1d); color: white; text-align: center; padding: 1.5rem; border-radius: 8px; margin: 3rem 0 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">🚨 জরুরি প্রয়োজনে তাৎক্ষণিক সহায়তা</h3>
+            <p style="margin: 0 0 0.8rem 0; font-size: 0.95rem;">যেকোনো বিপদ বা অপরাধমূলক পরিস্থিতিতে অবিলম্বে কল করুন জাতীয় জরুরি সেবায়:</p>
+            <div style="font-size: 2rem; font-weight: bold; background: white; color: #b91c1c; display: inline-block; padding: 0.3rem 1.5rem; border-radius: 50px; letter-spacing: 2px;">
+                📞 ৯৯৯
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; ২০২৬ ন্যায়বিচার ও অপরাধ পর্যবেক্ষণ পোর্টাল।</p>
+    </div>
+
+</body>
+</html>
